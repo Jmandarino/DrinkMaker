@@ -1,0 +1,23 @@
+[{
+    "name" : "Madre",
+    "description" : "Classic go to",
+    "contents" : [
+	{"Cranberry Juice": "1"},
+	{"Orange Juice": "3"},
+	{"Vodka": "1"}
+	
+	
+	
+	]},
+
+{
+    "name" : "Electric Kamikazie",
+    "description" : "sour flavor",
+    "contents" : [
+	{"Blue Curaco": "1"},
+	{"Triple Sec": "1"},
+	{"Vodka": "1"}
+	
+	]}
+	
+]
