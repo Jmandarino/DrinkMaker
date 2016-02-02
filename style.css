@@ -37,29 +37,5 @@
   padding: 10px;
 }
 
-header h1 { font-size: 26px; }
 
-#accordion {
-  clear: both;
-  float: left;
-}
 
-#accordion section {
-  text-align: left;
-  width: 450px;
-}
-
-#accordion section h1 {
-  font-size: 16px;
-  cursor: pointer;
-  border: 1px #C0392B solid;
-  border-radius: 5px;
-  background-color: #E74C3C;
-  padding: 10px;
-  color: #fff;
-}
-
-#accordion section p {
-  display: none;
-  padding-left: 10px;
-}

@@ -1,5 +1,6 @@
 var json;
 var selectedDrinks = [];
+var possibleDrinks = [];
 
 console.log("hello world");
 $(document).ready(function() {
@@ -73,7 +74,8 @@ function findPossibleDrinks(){
 	//console.log(json.drinks);
 	
 	//list of those who matched all ingredients
-	var  possibleDrinks = [];
+	//clear array
+	possibleDrinks = [];
 	
 	
 	//for all drinks in list
@@ -109,18 +111,43 @@ function findPossibleDrinks(){
 		//assert equality
 		if(superbag(selectedDrinks, ingredientList)){
 				
-				possibleDrinks.push(json[i].name);
+				//push object to possible drinks
+				possibleDrinks.push(json[i]);
 			}
 		
 		
 	}
 
-
-	$("#possibleDrinks").html(possibleDrinks.toString());
+	//display text of possible drinks to make
+	$("#possibleDrinks").html(getAllPossibleDrinkNames().toString());
 		
-	
+		
+		//display in accordion possible drinks to make
+		 addAccordionItems();
 	
 }
+
+//helper function for now
+function getAllPossibleDrinkNames(){
+	
+	var arr = [];
+	
+	for( var i = 0; i < possibleDrinks.length;  i++){
+		arr.push(possibleDrinks[i].name);
+		
+	}
+	
+	return arr;
+	
+}
+
+
+//add drink item to accordion
+
+function addAccordionItems(){
+	
+}
+
 
 
 
