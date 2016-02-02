@@ -17,8 +17,15 @@ $(document).ready(function() {
 		console.log(selectedDrinks);
 	});
 	
+	$(function() {
+		$( "#accordion" ).accordion();
+	});
+	
+	
+	
+	
 	//clicking a button
-	$("div").click(function(){
+	$(".btn").click(function(){
 		//get the id 
 		var drink = $(this).attr("id");
 		
@@ -108,10 +115,10 @@ function findPossibleDrinks(){
 		
 	}
 
-	if(possibleDrinks.length > 0){
-		$("#possibleDrinks").html(possibleDrinks.toString());
+
+	$("#possibleDrinks").html(possibleDrinks.toString());
 		
-	}
+	
 	
 }
 

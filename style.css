@@ -14,6 +14,9 @@
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  
+  	height: 28px;
+	width: 150px;
 }
 
 .btn:hover {
@@ -26,12 +29,37 @@
   text-decoration: none;
 }
 
+/*css for menu things*/
+#container {
+  max-width: 1000px;
+  margin: 150px auto;
+  text-align: center;
+  padding: 10px;
+}
 
-div {
-	
-	height: 28px;
-	width: 150px;
-	
-	
-	
+header h1 { font-size: 26px; }
+
+#accordion {
+  clear: both;
+  float: left;
+}
+
+#accordion section {
+  text-align: left;
+  width: 450px;
+}
+
+#accordion section h1 {
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px #C0392B solid;
+  border-radius: 5px;
+  background-color: #E74C3C;
+  padding: 10px;
+  color: #fff;
+}
+
+#accordion section p {
+  display: none;
+  padding-left: 10px;
 }
